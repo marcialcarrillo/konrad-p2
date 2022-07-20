@@ -1,0 +1,39 @@
+.cart-reminder {
+  &__sub-title {
+    font-size: 1rem;
+  }
+  &__rem-message {
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+  }
+
+  &__root {
+    margin-top: 0.6rem;
+    background-color: white;
+    min-height: 2rem;
+    // border: solid #ddd 0.0625rem;
+    box-shadow: $shadow-default;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: $breakpoint-tablet) {
+      align-items: flex-start;
+    }
+  }
+
+  &__button {
+    background-color: $secondary;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+
+    width: 85vw;
+    text-align: center;
+    font-weight: bold;
+    @media (min-width: $breakpoint-tablet) {
+      width: 10rem;
+      margin-right: 0.5rem;
+    }
+  }
+}

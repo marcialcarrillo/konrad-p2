@@ -1,0 +1,47 @@
+.checkout-summary {
+  &__root {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 0.3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    @media (min-width: $breakpoint-tablet) {
+      max-width: 26.0625rem;
+      margin-bottom: auto;
+    }
+    box-shadow: $shadow-default;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: $highlight;
+    color: white;
+    font-weight: 500;
+    padding: 1rem;
+  }
+  &__body {
+    padding: 1rem;
+  }
+  &__title {
+    &--h2 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+  }
+  &__wrapper {
+    &--sub {
+      height: 2rem;
+      border-bottom: solid #ddd 0.0625rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+  &__price--final {
+    color: $alert;
+    font-weight: 500;
+    font-size: 1.29rem;
+  }
+}

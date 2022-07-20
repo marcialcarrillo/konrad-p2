@@ -1,0 +1,15 @@
+.details-tools {
+  &__root {
+    margin-top: 0.5rem;
+    border-top: 0.0625rem solid #ddd;
+    border-bottom: 0.0625rem solid #ddd;
+  }
+  &__wrapper {
+    display: flex;
+    padding: 0.5rem;
+  }
+  &__icon {
+    width: 2rem;
+    margin-right: 0.5rem;
+  }
+}

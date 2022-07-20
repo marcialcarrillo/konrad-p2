@@ -1,0 +1,19 @@
+.details-data {
+  &__root {
+    // border-top: 0.0625rem solid #ddd;
+    // border-bottom: 0.0625rem solid #ddd;
+    margin: 0.6rem 0;
+    &.computer {
+      display: none;
+      @media (min-width: $breakpoint-tablet) {
+        display: block;
+      }
+    }
+    &.mobile {
+      display: block;
+      @media (min-width: $breakpoint-tablet) {
+        display: none;
+      }
+    }
+  }
+}

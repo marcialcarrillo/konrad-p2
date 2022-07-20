@@ -1,0 +1,10 @@
+.checkout-summ-item {
+  &__root {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid #ddd 0.0625rem;
+  }
+  &__info {
+    margin-right: 2rem;
+  }
+}

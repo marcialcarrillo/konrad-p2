@@ -1,0 +1,11 @@
+.books-container {
+  &__root {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    @media (min-width: $breakpoint-tablet) {
+      justify-content: flex-start;
+    }
+  }
+}

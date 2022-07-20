@@ -1,0 +1,11 @@
+.home-best {
+  &__root {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0rem;
+    @media (min-width: $breakpoint-tablet) {
+      padding: 0.75rem;
+    }
+  }
+}

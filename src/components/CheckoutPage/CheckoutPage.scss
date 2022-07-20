@@ -1,0 +1,11 @@
+.checkout-page {
+  &__root {
+    min-height: 67vh;
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      margin: 1rem 0;
+    }
+  }
+}

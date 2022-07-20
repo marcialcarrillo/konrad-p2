@@ -1,0 +1,27 @@
+.product-filter {
+  &__root {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgb(0 0 0 / 10%);
+    padding: 0.3rem;
+
+    @media (min-width: $breakpoint-tablet) {
+      width: 10rem;
+      float: left;
+      padding: 0 1.5rem 0 0.5rem;
+      border-bottom: 0;
+    }
+  }
+  &__title {
+    background-color: white;
+  }
+  &__item {
+    margin: 0.125rem 0;
+    border-top: #ddd solid 0.001rem;
+    // border: solid 0.125rem black;
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+}

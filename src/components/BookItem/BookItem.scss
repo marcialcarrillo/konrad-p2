@@ -1,0 +1,54 @@
+.book-item {
+  &__root {
+    width: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    margin: 0.5625rem 0rem;
+    min-width: 9.5rem;
+    @media (min-width: $breakpoint-tablet) {
+      width: 20%;
+    }
+  }
+  &__image-container {
+    display: flex;
+    justify-content: center;
+    height: 12.125rem;
+    width: inherit;
+  }
+  &__image {
+    width: inherit;
+    border: solid #ddd 0.06rem;
+  }
+  &__author-name {
+    color: #5a5858;
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+  &__book-name {
+    font-family: NewBaskerville;
+    font-size: 1.06rem;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    letter-spacing: 0.015em;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__book-name-wrap {
+    height: 2rem;
+    margin-bottom: 0.6rem;
+  }
+  &__title-wrap {
+    overflow: hidden;
+  }
+  &__price {
+    color: $alert;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,56 @@
+.process-success {
+  &__root {
+    background-color: white;
+    padding: 1rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    box-shadow: $shadow-default;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $breakpoint-tablet) {
+      min-width: 33.5rem;
+      align-items: center;
+      margin-bottom: auto;
+    }
+  }
+  &__button {
+    background-color: $secondary;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    width: auto;
+    @media (min-width: $breakpoint-tablet) {
+      width: fit-content;
+    }
+  }
+  &__msg-wrapper {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__loading-msg {
+    font-weight: 500;
+  }
+  &__spinner {
+    // margin-top: 1rem;
+    // max-width: 6.25rem;
+    display: block;
+    margin-top: 5.5rem;
+    max-width: 9.25rem;
+    margin-bottom: 5.5625rem;
+  }
+  &__loading-wrapper {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__thankyou {
+    max-width: 17.25rem;
+  }
+}

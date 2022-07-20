@@ -1,0 +1,30 @@
+.details-checkout {
+  &__root {
+    display: flex;
+    width: -webkit-fill-available;
+  }
+  &__button {
+    background-color: $secondary;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+    width: 79vw;
+    @media (min-width: $breakpoint-tablet) {
+      width: 65%;
+    }
+  }
+  &__form {
+    // width: 100vw;
+    display: flex;
+    justify-content: center;
+    @media (min-width: $breakpoint-tablet) {
+      width: inherit;
+      justify-content: flex-start;
+    }
+  }
+  &__input {
+    width: 1rem;
+    padding-left: 0.5rem;
+  }
+}

@@ -1,0 +1,13 @@
+.process-payment {
+  &__root {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint-tablet) {
+      margin: 1rem 0;
+      flex-direction: row-reverse;
+      justify-content: center;
+      min-height: 62vh;
+    }
+  }
+}
