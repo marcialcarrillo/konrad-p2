@@ -3,7 +3,7 @@
 ## Demo link:
 See the site at [Heroku](https://marcialcv-konrad-project2.herokuapp.com/)
 
-## Table of Content:
+## Table of Contents:
 
 - [About The Project](#about-the-project)
 - [Project Duration](#project-duration)
