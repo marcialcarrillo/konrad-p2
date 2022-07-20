@@ -19,7 +19,7 @@ See the site at [Heroku](https://marcialcv-konrad-project2.herokuapp.com/)
 The Big Three Depository is a [bookdepository-inspired](https://www.bookdepository.com/) e-commerce specialized in the works of "the big 3" of American science fiction. The objective of the project was to learn and get used to using react hooks, state propagation (prop-drilling & context) and react router.
 
 ## Project Duration
-7 days.
+7 days with some fixes post-completion (see [commits](https://github.com/marcialcarrillo/konrad-project2/commits/master) after import).
 
 ## Screenshots
 
