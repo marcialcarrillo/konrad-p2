@@ -2,10 +2,11 @@
   &__container {
     display: flex;
     justify-content: center;
-    background-color: #ddd;
-    @media (min-width: $breakpoint-tablet) {
-      min-height: 71vh;
-    }
+    background-color: $background-white;
+    @include center-main;
+    // @media (min-width: $breakpoint-tablet) {
+    //   min-height: 71vh;
+    // }
   }
   &__root {
     margin: 1rem;
@@ -15,7 +16,7 @@
       display: flex;
       flex-direction: column;
       margin: auto 0;
-      padding: 2rem;
+      margin: 1rem;
     }
   }
   &__title {
@@ -62,7 +63,7 @@
   &__main-wrapper {
     @media (min-width: $breakpoint-tablet) {
       display: flex;
-      margin-top: 1.3rem;
+      margin: 1.3rem;
     }
   }
 }

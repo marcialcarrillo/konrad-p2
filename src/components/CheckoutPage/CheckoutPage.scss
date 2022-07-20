@@ -1,6 +1,6 @@
 .checkout-page {
   &__root {
-    min-height: 67vh;
+    @include center-main;
     @media (min-width: $breakpoint-tablet) {
       display: flex;
       flex-direction: row-reverse;

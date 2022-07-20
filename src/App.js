@@ -6,14 +6,16 @@ import Footer from "./components/Footer/Footer";
 
 
 function App() {
-
+  const block = "app";
   let [cartContext, setCartContext] = useState([]);
 
   return (
     <ShoppingCartContext.Provider value={[cartContext, setCartContext]}>
-      <Header />
-      <Outlet />
-      <Footer />
+      <div className={`${block}__root`}>
+        <Header />
+        <Outlet />
+        <Footer />
+      </div>
     </ShoppingCartContext.Provider>
   );
 }

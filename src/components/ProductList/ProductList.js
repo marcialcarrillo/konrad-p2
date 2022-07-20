@@ -26,19 +26,25 @@ const About = () => {
 
   return (
     <main className={`${block}__root`}>
-      <ProductFilter
-        categoryFilter={categoryFilter}
-        setCategoryFilter={setCategoryFilter}
-      />
-      <div className={`${block}__catalog-wrapper`}>
-        <h2>Our Book Catalog</h2>
-        <ProductPagination maxPages={maxPages} page={page} setPage={setPage} />
-        <BooksContainer
+      <div className={`${block}__wrapper`}>
+        <ProductFilter
           categoryFilter={categoryFilter}
-          initialIndex={initialIndex}
-          finalIndex={finalIndex}
-          filteredAuthorsData={filteredAuthorsData}
+          setCategoryFilter={setCategoryFilter}
         />
+        <div className={`${block}__catalog-wrapper`}>
+          <h2>Our Book Catalog</h2>
+          <ProductPagination
+            maxPages={maxPages}
+            page={page}
+            setPage={setPage}
+          />
+          <BooksContainer
+            categoryFilter={categoryFilter}
+            initialIndex={initialIndex}
+            finalIndex={finalIndex}
+            filteredAuthorsData={filteredAuthorsData}
+          />
+        </div>
       </div>
     </main>
   );

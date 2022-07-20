@@ -1,6 +1,6 @@
 .home {
   &__root {
-    min-height: 66vh;
+    @include center-main;
     background-color: $background-white;
   }
   &__best-wrapper {
@@ -14,7 +14,7 @@
     border-bottom: solid #ddd 0.0625rem;
     padding: 0.5rem;
   }
-  &__best-container{
-      padding: 0.5rem;
+  &__best-container {
+    padding: 0.5rem;
   }
 }

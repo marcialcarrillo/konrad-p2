@@ -2,12 +2,12 @@
   &__root {
     display: flex;
     flex-direction: column;
+    @include center-main;
 
     @media (min-width: $breakpoint-tablet) {
       margin: 1rem 0;
       flex-direction: row-reverse;
       justify-content: center;
-      min-height: 62vh;
     }
   }
 }

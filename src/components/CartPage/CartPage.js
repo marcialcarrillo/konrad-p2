@@ -63,30 +63,32 @@ const CartPage = () => {
 
   return (
     <main className={`${block}__root`}>
-      <h1 className={`${block}__title`}> Your basket</h1>
-      {cartContext.length ? (
-        <div className={`${block}__summary`}>
-          <p className={`${block}__message`}>
-            you have {itemCounter} {itemCounter > 1 ? "items" : "item"} in your
-            cart for a total of{" "}
-            <strong>US${priceAccumulator.toFixed(2)}</strong>
-          </p>
-          <Link to={"/checkout-page"} className={`${block}__button`}>
-            Checkout
-          </Link>
-        </div>
-      ) : (
-        <p className={`${block}__summary--empty`}>Your cart is empty</p>
-      )}
+      <div className={`${block}__wrapper`}>
+        <h1 className={`${block}__title`}> Your basket</h1>
+        {cartContext.length ? (
+          <div className={`${block}__summary`}>
+            <p className={`${block}__message`}>
+              you have {itemCounter} {itemCounter > 1 ? "items" : "item"} in
+              your cart for a total of{" "}
+              <strong>US${priceAccumulator.toFixed(2)}</strong>
+            </p>
+            <Link to={"/checkout-page"} className={`${block}__button`}>
+              Checkout
+            </Link>
+          </div>
+        ) : (
+          <p className={`${block}__summary--empty`}>Your cart is empty</p>
+        )}
 
-      {cartContext.length ? (
-        <div className={`${block}__items`}>
-          <h2 className={`${block}__title--h2`}>Shopping Cart Details</h2>{" "}
-          {items}
-        </div>
-      ) : (
-        <CartPageReminder />
-      )}
+        {cartContext.length ? (
+          <div className={`${block}__items`}>
+            <h2 className={`${block}__title--h2`}>Shopping Cart Details</h2>{" "}
+            {items}
+          </div>
+        ) : (
+          <CartPageReminder />
+        )}
+      </div>
     </main>
   );
 };

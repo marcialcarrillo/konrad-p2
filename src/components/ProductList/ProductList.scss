@@ -1,15 +1,19 @@
 .product-list {
   &__root {
+    @include center-main;
+  }
+
+  &__wrapper {
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
+    padding: 1rem;
 
     @media (min-width: $breakpoint-tablet) {
       flex-direction: row;
-      min-height: 70vh;
       justify-content: center;
     }
   }
+
   &__catalog-wrapper {
     background-color: white;
     @media (min-width: $breakpoint-tablet) {
