@@ -23,11 +23,22 @@ The Big Three Depository is a [Book Depository](https://www.bookdepository.com/)
 
 ## Screenshots
 
+- Product List
 ![Product List](https://i.imgur.com/59xIeIL.png)
+
+- Product Details
 ![Product Details](https://i.imgur.com/jqO0eFK.png)
+
+- Basket
 ![Basket](https://i.imgur.com/FUNSb4e.png)
+
+- Checkout
 ![Checkout](https://i.imgur.com/ZlbcgV8.png)
+
+- Payment Complete
 ![Payment Complete](https://i.imgur.com/J21JMd2.png)
+
+- Empty Basket
 ![Empty Basket](https://i.imgur.com/ZKHBNCk.png)
 
 ## Technologies
