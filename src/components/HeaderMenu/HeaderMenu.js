@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import HeaderMenuHamburger from "../HeaderMenuHamburger/HeaderMenuHamburger";
 import { Link } from "react-router-dom";
 
@@ -9,6 +9,12 @@ const HeaderMenu = () => {
   const toggleHamburger = () => {
     setIsOpen((prevState) => !prevState);
   };
+
+  useEffect(() => {
+    !isOpen
+      ? document.body.classList.remove("no-scroll")
+      : document.body.classList.add("no-scroll");
+  }, [isOpen]);
 
   return (
     <div className={`${block}__wrapper`}>
