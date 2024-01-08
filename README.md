@@ -1,5 +1,13 @@
 # Second Project - Konrad's Web Development Immersive Program
 
+## Demo:
+
+You can explore the demo [here](https://master.d2jb6zvkq3kjkh.amplifyapp.com/).
+
+### Notes:
+
+* The demo is hosted via [AWS Amplify](https://aws.amazon.com/amplify/).
+
 ## Table of Contents:
 
 - [About The Project](#about-the-project)
